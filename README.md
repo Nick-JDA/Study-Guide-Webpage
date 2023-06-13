@@ -1,2 +1,2 @@
-# Team-1-Group-Project
+# Project-2-Study-Guide-Webpage
 Full stack project
