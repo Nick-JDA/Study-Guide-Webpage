@@ -5,16 +5,19 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
   try {
     //get modules
-    const moduleData = await Modules.findAll();
+    const moduleData = await Modules.findAll({});
     //map moduleData to array
+    console.log(moduleData)
     const modules = moduleData.map((module) => module.get({ plain: true }));
     //render modules to homepage
     //will be passing this more data if we want to render more than just modules on homepage
+    console.log(modules)
     res.render('homepage', {
       modules,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
