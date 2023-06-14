@@ -17,7 +17,7 @@ Users.init(
       autoIncrement: true,
     },
     name: {
-      type: VARCHAR(20),
+      type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
