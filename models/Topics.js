@@ -16,11 +16,11 @@ Topics.init(
       allowNull: false,
     },
     module_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'module',
-            key: 'id',
-        },
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'module',
+        key: 'id',
+      },
     },
   },
   {
