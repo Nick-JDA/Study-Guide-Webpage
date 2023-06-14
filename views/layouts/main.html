@@ -8,54 +8,39 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div>
-        <!-- Header Div -->
-        <header>
-            <!-- Header Title -->
-            <h1>
-                Full-Stack Study Guide
-            </h1>
-            <!-- Navbar -->
-            <nav>
-                <button>
-                    Home
-                </button>
-                <button>
-                    Lessons
-                </button>
-                <button>
-                    Login/Logout/Profile
-                </button>
-            </nav>
-        </header>
-    </div>
-    <div>
-        <nav>
-            <h2>
-                Lessons
-            </h2>
-        </nav>
-    </div>
-    <main>
-        <!-- Body -->
+            <!-- Navbar / Header-->
+    <header>
         <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-              <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                  <!-- Header Nav Title -->
+              <a class="navbar-brand" href="#">Full-Stack Study Guide</a>
+              <a>
+                <button>
+                    Home
+                </button>
+              </a>
+              <a>
+                <button>
+                    Login/Logout
+                </button>
+              </a>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lessons</h5>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <!-- List Items Below -->
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <!-- 'Home' List Item (Active Style) -->
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Lesson 1</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -79,6 +64,9 @@
               </div>
             </div>
           </nav>
+    </header>
+    <main>
+        <!-- Body -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
