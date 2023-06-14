@@ -1,6 +1,6 @@
 const Users = require("./Users");
-const Topics = require("./Users");
-const Modules = require("./Users");
+const Topics = require("./Topics");
+const Modules = require("./Modules");
 const Comments = require("./Comments");
 
 // modules have many topics
