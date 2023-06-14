@@ -26,3 +26,5 @@ Topics.hasMany(Comments, {
 Comments.belongsTo(Topics, {
   foreignKey: 'topic_id',
 });
+
+module.exports = { Users, Topics, Modules, Topics };
