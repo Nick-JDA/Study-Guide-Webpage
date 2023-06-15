@@ -6,11 +6,10 @@ router.get('/', async (req, res) => {
   try {
     //get modules
     const moduleData = await Modules.findAll({
-      include: [{ model: Topics }],
+      include: [{ model: Topics }, { model: Comments }],
     });
     //map moduleData to array
     const modules = moduleData.map((module) => module.get({ plain: true }));
-
     console.log(modules);
     //render modules to homepage
     //will be passing this more data if we want to render more than just modules on homepage
@@ -24,6 +23,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+//might not need this route
 router.get('/:id', async (req, res) => {
   try {
     const topicData = await Topics.findAll({
