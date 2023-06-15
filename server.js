@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //for login authorization
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ auth });
 
 const sess = {
   secret: 'Super secret secret',
