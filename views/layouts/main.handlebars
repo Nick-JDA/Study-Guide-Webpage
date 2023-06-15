@@ -58,29 +58,25 @@
                 aria-label='Close'
               ></button>
             </div>
-
-            <div class='offcanvas-body'>
-              <ul class='navbar-nav justify-content-end flex-grow-1 pe-3'>
-                <!-- 'Home' List Item (Active Style, nav-link regular style)(aria-current adds description for assitive tech) -->
-                <li class='nav-item'>
-                  <a
-                    class='nav-link active'
-                    aria-current='page'
-                    href='#'
-                  >Home</a>
-                </li>
-                <!-- MODULE 1 W/ DROPDOWN ADD #EACH 'DATA From Module Titles' HERE-->
-                {{#each modules as |module|}}
-                  <li class='nav-item dropdown'>
-                    <a
-                      class='nav-link dropdown-toggle'
-                      href='#'
-                      id='offcanvasNavbarDropdown'
-                      role='button'
-                      data-bs-toggle='dropdown'
-                      aria-expanded='false'
-                    >
-                      {{module.name}}
+        
+          <div class='offcanvas-body'>
+            <ul class='navbar-nav justify-content-end flex-grow-1 pe-3'>
+              <!-- 'Home' List Item (Active Style, nav-link regular style)(aria-current adds description for assitive tech) -->
+              <li class='nav-item'>
+                <a class='nav-link active' aria-current='page' href='#'>Home</a>
+              </li>
+              <!-- MODULES W/ TOPICS DROPDOWN -->
+              {{#each modules as |module|}}
+              <li class='nav-item dropdown'>
+                <a class='nav-link dropdown-toggle' href='#' id='offcanvasNavbarDropdown' role='button'
+                  data-bs-toggle='dropdown' aria-expanded='false'>
+                  {{module.name}}
+                </a>
+                <ul class='dropdown-menu' aria-labelledby='offcanvasNavbarDropdown'>
+                  {{#each module.topics as |topic|}}
+                  <li>
+                    <a class='dropdown-item' href='/api/{{topic.id}}'>
+                      {{topic.name}}
                     </a>
                     <ul
                       class='dropdown-menu'
@@ -99,22 +95,16 @@
                       </li>
                     </ul>
                   </li>
-                {{/each}}
-              </ul>
-              <!-- Search bar, no use yet. -->
-              <form class='d-flex'>
-                <input
-                  class='form-control me-2'
-                  type='search'
-                  placeholder='Search'
-                  aria-label='Search'
-                />
-                <button
-                  class='btn btn-outline-success'
-                  type='submit'
-                >Search</button>
-              </form>
-            </div>
+                  {{/each}}
+                </ul>
+              </li>
+              {{/each}}
+            </ul>
+            <!-- Search bar, no use yet. -->
+            <form class='d-flex'>
+              <input class='form-control me-2' type='search' placeholder='Search' aria-label='Search' />
+              <button class='btn btn-outline-success' type='submit'>Search</button>
+            </form>
           </div>
         </div>
       </nav>
