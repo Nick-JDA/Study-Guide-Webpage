@@ -27,4 +27,4 @@ Comments.belongsTo(Topics, {
   foreignKey: 'topic_id',
 });
 
-module.exports = { Users, Topics, Modules, Topics };
+module.exports = { Users, Topics, Modules, Comments };

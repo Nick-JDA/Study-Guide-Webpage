@@ -24,4 +24,22 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const topicData = await Topics.findAll({
+      where: { id: req.params.id },
+      include: [{ model: Comments }],
+    });
+    if (!topicData) {
+      res.status(404).json({ message: 'No topic found' });
+    }
+    //add rendering for view here
+    res.render('', {
+      topicData,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;
