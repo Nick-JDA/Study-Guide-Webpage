@@ -2,6 +2,17 @@ const router = require('express').Router();
 const { Users, Topics, Modules, Comments } = require('../models');
 const withAuth = require('../utils/auth');
 
+//login route
+router.get('/login', (req, res) => {
+  console.log('beforeif');
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  console.log('working');
+  res.render('login');
+});
+
 router.get('/', async (req, res) => {
   try {
     //get modules
@@ -34,12 +45,13 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'No topic found' });
     }
     //add rendering for view here
-    res.render('', {
-      topicData,
-      logged_in: req.session.logged_in,
-    });
+    // res.render('', {
+    //   topicData,
+    //   logged_in: req.session.logged_in,
+    // });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
 module.exports = router;
