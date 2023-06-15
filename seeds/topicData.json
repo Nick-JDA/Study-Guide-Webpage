@@ -35,11 +35,7 @@
     "description": "Introduction to CSS",
     "examples": "",
     "resources": [
-      "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started",
-      "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
-      "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
-      "https://developer.mozilla.org/en-US/docs/Glossary/Attribute",
-      "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+      "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started"
     ],
     "video_link": "https://www.youtube.com/watch?v=0W6qz0-aDaM"
   },
