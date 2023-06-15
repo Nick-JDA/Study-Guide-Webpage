@@ -22,6 +22,18 @@ Topics.init(
         key: 'id',
       },
     },
+    description: {
+      type: DataTypes.STRING,
+    },
+    examples: {
+      type: DataTypes.STRING,
+    },
+    resources: {
+      type: DataTypes.STRING,
+    },
+    video_link: {
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,
