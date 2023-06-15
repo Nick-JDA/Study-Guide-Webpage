@@ -1,42 +1,62 @@
 [
   {
     "name": "Command-Line",
-    "module_id": 1
+    "module_id": 1,
+    "description": "Introduction to the command-line interface",
+    "examples": "./public/images/commandLineExample",
+    "resources": [
+      "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands"
+    ],
+    "video_link": "https://www.youtube.com/watch?v=MBBWVgE0ewk"
   },
   {
     "name": "Git",
-    "module_id": 1
+    "module_id": 1,
+    "description": "Introduction to GitHub Repositories",
+    "examples": "",
+    "resources": [
+      "https://docs.github.com/en/get-started/quickstart/hello-world"
+    ],
+    "video_link": "https://www.youtube.com/watch?v=RGOj5yH7evk"
   },
   {
     "name": "HTML",
-    "module_id": 1
+    "module_id": 1,
+    "description": "Introduction to HTML",
+    "examples": "",
+    "resources": [
+      "https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet"
+    ],
+    "video_link": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
   },
   {
-    "name": "Attributes",
-    "module_id": 1
-  },
-  {
-    "name": "Css-Color",
-    "module_id": 1
-  },
-  {
-    "name": "Css-Font",
-    "module_id": 1
-  },
-  {
-    "name": "Css-Selectors",
-    "module_id": 1
-  },
-  {
-    "name": "HTML-Display",
-    "module_id": 1
+    "name": "Css",
+    "module_id": 1,
+    "description": "Introduction to CSS",
+    "examples": "",
+    "resources": [
+      "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started",
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "https://developer.mozilla.org/en-US/docs/Glossary/Attribute",
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+    ],
+    "video_link": "https://www.youtube.com/watch?v=0W6qz0-aDaM"
   },
   {
     "name": "Box-Model",
-    "module_id": 1
+    "module_id": 1,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
   },
   {
-    "name": "Css-Positioning",
-    "module_id": 1
+    "name": "FlexBox",
+    "module_id": 1,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
   }
 ]
