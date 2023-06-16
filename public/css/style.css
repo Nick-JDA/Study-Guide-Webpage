@@ -1,5 +1,59 @@
+:root {
+  --primaryfont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  --primarybg: rgb(58, 58, 58);
+  --secondarybg: rgb(144, 144, 144);
+  --primarycolor: rgb(141, 166, 82);
+  --secondarycolor: rgb(56, 81, 35);
+  --secondarycolor: rgb(56, 81, 35);
+  --secondarycolor: rgb(56, 81, 35);
+
+  --topnavPrimary_color: rgb(56, 81, 35);
+  --topnavSecondary_color: rgb(179, 240, 73);
+  --topnavFont_color: rgb(9, 9, 9);
+
+  --sidebarPrimary_color: rgb(56, 81, 35);
+  --sidebarSecondary_color: rgb(56, 81, 35);
+  --sidebarTitle_color: rgb(56, 81, 35);
+
+
+  --lessonTitle_color: rgb(0,0,0);
+
+  --notesCaption_color: rgb(0,0,0);
+  --notesInput_color: rgb(0,0,0);
+  --notesHeader_color: rgb(255, 0, 0);
+  --noteCard_color: rgb(0,0,0);
+  --noteDelete_color: rgb(0,0,0);
+  --noteText_color: rgb(0,0,0);
+  
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--primaryfont);
+}
+
+header {
+  padding: 0%;
+}
 .navbar {
+    padding-right: 5%;
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: var(--topnavPrimary_color);
+    color: var(--sidebarTitle_color)
   }
+
+.navbar-light .navbar-brand {
+ color: var(--topnavFont_color);
+ font-size: 175%;
+}
+
+#homeBtn, #logBtn {
+  border-width: 5px;
+  border-color: white;
+  background-color: var(--topnavSecondary_color);
+  color: var(--topnavFont_color);
+  size: 50%;
+}
