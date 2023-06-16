@@ -1,7 +1,7 @@
 <!-- Lesson Header -->
 <div>
   <h2>
-    {{name}}
+    {{topic.0.name}}
   </h2>
 </div>
 <!-- Video Player iFrame -->
@@ -9,7 +9,7 @@
   <iframe
     width='560'
     height='315'
-    src='{{video_link}}'
+    src='{{topic.0.video_link}}'
     title='YouTube video player'
     frameborder='0'
     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen'
