@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Topics, Comments, Modules } = require('../../models');
+const { Topics, Comments, Modules, Users } = require('../../models');
 
 router.get('/:id', async (req, res) => {
   try {
     const topicData = await Topics.findAll({
       where: { id: req.params.id },
-      include: [{ model: Comments }],
+      include: [{ model: Comments, include: [Users] }],
     });
     const topic = topicData.map((topic) => topic.get({ plain: true }));
 
@@ -13,7 +13,7 @@ router.get('/:id', async (req, res) => {
       include: [{ model: Topics, include: [Comments] }],
     });
     const modules = moduleData.map((module) => module.get({ plain: true }));
-    console.log(topic[0].comments[0].comment);
+    console.log(topic[0].comments[0]);
 
     res.render('homepage', {
       modules,
