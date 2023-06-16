@@ -14,7 +14,7 @@
 <body>
   <!-- Navbar / Header-->
   <header>
-    <nav class="navbar navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-light fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
@@ -23,10 +23,10 @@
         <!-- Header Nav Title -->
         <a class="navbar-brand" href="#">Full-Stack Study Guide</a>
         <a>
-          <button>Home</button>
+          <button id="homeBtn" class="btn btn-primary">Home</button>
         </a>
         <a>
-          <button>Login/Logout</button>
+          <button id="logBtn" class="btn btn-primary">Login/Logout</button>
         </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
@@ -83,11 +83,18 @@
       </h2>
     </div>
     <!-- Video Player iFrame -->
-    <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+    <!-- Now more responsive...DONE. Should I do this in CSS? -->
+    <div class="mx-auto text-center">
+      <div style="max-width: 560px; margin: 0 auto;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
     </div>
     <div>
       <h3>
@@ -98,7 +105,7 @@
       <textarea class="form-control" aria-label="textarea"></textarea>
     </div>
     <div>
-      
+
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6 mb-3">
@@ -123,7 +130,7 @@
           </div>
         </div>
       </div>
-    
+
       <!-- Body -->
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
