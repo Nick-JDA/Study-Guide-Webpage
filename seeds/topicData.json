@@ -7,7 +7,7 @@
     "resources": [
       "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands"
     ],
-    "video_link": "https://www.youtube.com/watch?v=MBBWVgE0ewk"
+    "video_link": "https://www.youtube.com/embed/MBBWVgE0ewk"
   },
   {
     "name": "Git",
@@ -17,7 +17,7 @@
     "resources": [
       "https://docs.github.com/en/get-started/quickstart/hello-world"
     ],
-    "video_link": "https://www.youtube.com/watch?v=RGOj5yH7evk"
+    "video_link": "https://www.youtube.com/embed/RGOj5yH7evk"
   },
   {
     "name": "HTML",
@@ -27,7 +27,7 @@
     "resources": [
       "https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet"
     ],
-    "video_link": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
+    "video_link": "https://www.youtube.com/embed/qz0aGYrrlhU"
   },
   {
     "name": "Css",
@@ -37,7 +37,7 @@
     "resources": [
       "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started"
     ],
-    "video_link": "https://www.youtube.com/watch?v=0W6qz0-aDaM"
+    "video_link": "https://www.youtube.com/embed/0W6qz0-aDaM"
   },
   {
     "name": "Box-Model",
