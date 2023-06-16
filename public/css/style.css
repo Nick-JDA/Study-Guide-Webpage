@@ -1,59 +1,176 @@
 :root {
   --primaryfont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
-  --primarybg: rgb(58, 58, 58);
-  --secondarybg: rgb(144, 144, 144);
-  --primarycolor: rgb(141, 166, 82);
-  --secondarycolor: rgb(56, 81, 35);
-  --secondarycolor: rgb(56, 81, 35);
-  --secondarycolor: rgb(56, 81, 35);
+  /* Color Pallette */
+  --primary: rgb(173, -0, 28);
+  --secondary: rgb(107, 20, 38);
+  --tertiary: rgb(250, 220, 212);
+  --quaternary: rgb(196, 206, 195);
+  --quinary: rgb(131, 160, 138);
+  --senary: rgb(66, 120, 87);
+  --septenary: rgb(32, 118, 91);
+  --octonary: rgb(36, 63, 46);
+  --nonary: rgb(43, 49, 35);
 
-  --topnavPrimary_color: rgb(56, 81, 35);
-  --topnavSecondary_color: rgb(179, 240, 73);
+/* Element Breakdown */
+  --body_color: rgb(196, 206, 195);
+
+  --topnavPrimary_color: rgb(36, 63, 46);
+  --topnavBtn_color: rgb(179, 240, 73);
   --topnavFont_color: rgb(9, 9, 9);
+  --topnavBtnBorder: rgb(9, 9, 9);
 
-  --sidebarPrimary_color: rgb(56, 81, 35);
+  --sidebarBg_color: rgb(56, 81, 35);
   --sidebarSecondary_color: rgb(56, 81, 35);
-  --sidebarTitle_color: rgb(56, 81, 35);
-
+  --sidebarTitle_color: rgb(179, 240, 73);
+  --sidebarLi_color: rgb(32, 118, 91);
+  --dropdownBg_color: rgb(179, 240, 73);
+  --dropdownItems_color: rgb(56, 81, 35);
+  --dropdownHoverText_color: rgb(250, 220, 212);
+  --dropdownHoverOverlay_color: rgb(107, 20, 38);
 
   --lessonTitle_color: rgb(0,0,0);
 
-  --notesCaption_color: rgb(0,0,0);
-  --notesInput_color: rgb(0,0,0);
-  --notesHeader_color: rgb(255, 0, 0);
-  --noteCard_color: rgb(0,0,0);
-  --noteDelete_color: rgb(0,0,0);
-  --noteText_color: rgb(0,0,0);
-  
+  --notesTitle_color: rgb(0,0,0);
+  --notesinputBg_color: rgb(250, 220, 212);
+
+  --cardHeaderBg_color: rgb(131, 160, 138);
+  --cardheaderTxt_color: rgb(0, 0, 0);
+  --cardbodyBg_color: rgb(196, 206, 195);
+  --cardbodyTxt_color: rgb(0, 0, 0);
+
+  --delBtnBg_color: rgb(56, 81, 35);
+  --delBtnTxt_color: rgb(32, 118, 91);
+  --delBtnBorder_color: rgb(250, 220, 212);
 }
 
 body {
   line-height: 1.5;
   font-family: var(--primaryfont);
+  background-color: var(--body_color);
 }
 
-header {
-  padding: 0%;
-}
 .navbar {
-    padding-right: 5%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--topnavPrimary_color);
-    color: var(--sidebarTitle_color)
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: var(--topnavPrimary_color);
+  color: var(--sidebarTitle_color);
+  width: 100%;
+  margin-bottom: 1%;
   }
 
-.navbar-light .navbar-brand {
+.navbar-brand {
  color: var(--topnavFont_color);
- font-size: 175%;
+ font-size: 275%;
+ margin-right: 5%;
+ margin-top: 6%;
+ margin-left: 2%;
+ margin-bottom: 3%;
+}
+
+.offcanvas {
+  background-color: var(--sidebarBg_color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--sidebarLi_color) !important;
+}
+
+.dropdown-menu {
+  background-color: var(--dropdownBg_color);
+}
+
+.dropdown-item {
+  color: var(--dropdownItems_color);
+}
+
+.dropdown-item:hover {
+  color: var(--dropdownHoverText_color);
+  background-color: var(--dropdownHoverOverlay_color)
 }
 
 #homeBtn, #logBtn {
   border-width: 5px;
-  border-color: white;
-  background-color: var(--topnavSecondary_color);
+  border-color: var(--topnavBtnBorder);
+  background-color: var(--topnavBtn_color);
   color: var(--topnavFont_color);
-  size: 50%;
 }
+
+#homeBtn {
+  position: absolute;
+  top: 3px;
+  left: 70px;
+  transform: scale(0.5);
+  margin-bottom: 50px;
+  opacity: 50%;
+}
+
+#logBtn {
+  margin-left: 3%;
+  margin-top: 3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+h2 {
+  margin-left: 10%;
+  margin-bottom: 3%;
+  margin-top: 10%;
+  color: var(--lessonTitle_color);
+  font-size: 200%;
+  padding-top: 150px;
+}
+
+h6 {
+  margin-top: 3%;
+  margin-left: 4%;
+  color: var(--notesTitle_color);
+}
+
+.videoPlayer {
+  border: 2px solid black;
+}
+
+.form-control {
+  background-color: var(--notesinputBg_color);
+  margin-bottom: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 1px solid black;
+}
+
+.form-control:focus {
+  background-color: var(--notesinputBg_color);
+}
+
+.card {
+  border: 1.5px solid black;
+  border-radius: .25rem;
+}
+
+.card-header {
+  background-color: var(--cardHeaderBg_color);
+  border-bottom: 1px solid black;
+}
+
+h5 {
+  color: var(--cardheaderTxt_color);
+}
+
+.card-body {
+  background-color: var(--cardbodyBg_color);
+  border-radius: .1rem;
+}
+
+.card-text {
+  color: var(--cardbodyTxt_color);
+}
+
+#delBtn {
+  color: var(--delBtnTxt_color);
+  background-color: var(--delBtnBg_color);
+  border-color: var(--delBtnBorder_color);
+}
+

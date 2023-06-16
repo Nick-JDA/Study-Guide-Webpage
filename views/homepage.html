@@ -26,7 +26,7 @@
           <button id="homeBtn" class="btn btn-primary">Home</button>
         </a>
         <a>
-          <button id="logBtn" class="btn btn-primary">Login/Logout</button>
+          <button id="logBtn" class="btn btn-primary">Login</button>
         </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
@@ -85,21 +85,22 @@
     <!-- Video Player iFrame -->
     <!-- Now more responsive...DONE. Should I do this in CSS? -->
     <div class="mx-auto text-center">
-      <div style="max-width: 560px; margin: 0 auto;">
+      <div style="max-width: 1080px; margin: 0 auto;">
         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
           <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="videoPlayer"
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
           </iframe>
         </div>
       </div>
     </div>
     <div>
-      <h3>
+      <h6>
         Write notes below!
-      </h3>
+      </h6>
     </div>
     <div class="input-group">
       <textarea class="form-control" aria-label="textarea"></textarea>
@@ -124,7 +125,7 @@
               <h5 class="card-header">Featured</h5>
               <div class="card-body">
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Button</a>
+                <a href="#" id="delBtn" class="btn btn-primary">Button</a>
               </div>
             </div>
           </div>
