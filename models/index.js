@@ -11,6 +11,7 @@ Modules.hasMany(Topics, {
 Topics.belongsTo(Modules, {
   foreignKey: 'module_id',
 });
+
 // users have many comments
 Users.hasMany(Comments, {
   foreignKey: 'user_id',
@@ -19,6 +20,7 @@ Users.hasMany(Comments, {
 Comments.belongsTo(Users, {
   foreignKey: 'user_id',
 });
+
 // topics have many comments
 Topics.hasMany(Comments, {
   foreignKey: 'topic_id',

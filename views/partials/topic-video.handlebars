@@ -15,3 +15,21 @@
     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen'
   ></iframe>
 </div>
+
+<!-- Note Card -->
+<div class='container'>
+  <div class='row justify-content-center'>
+      {{#each topic.0.comments as |comment|}}
+        <div class='col-md-6 mb-3'>
+          <!-- Note Card -->
+          <div class='card'>
+            <h5 class='card-header'>{{comment.user_id}}</h5>
+            <div class='card-body'>
+              <p class='card-text'>{{comment.comment}}</p>
+              <a href='#' class='btn btn-primary'>Button</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+  </div>
+</div>

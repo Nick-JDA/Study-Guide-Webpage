@@ -13,6 +13,8 @@ router.get('/:id', async (req, res) => {
       include: [{ model: Topics, include: [Comments] }],
     });
     const modules = moduleData.map((module) => module.get({ plain: true }));
+    console.log(topic[0].comments[0].comment);
+
     res.render('homepage', {
       modules,
       topic,
