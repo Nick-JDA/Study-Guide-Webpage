@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
   try {
     //get modules
     const moduleData = await Modules.findAll({
-      include: [{ model: Topics }, { model: Comments }],
+      include: [{ model: Topics, include: [{ model: Comments }] }],
     });
     //map moduleData to array
     const modules = moduleData.map((module) => module.get({ plain: true }));

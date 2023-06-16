@@ -31,17 +31,8 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-//uncomment when we add public folder
 app.use(express.static(path.join(__dirname, 'public')));
-// app.get('/newlogin', (req, res) => {
-//   console.log('beforeif');
-//   if (req.session.loggedIn) {
-//     res.redirect('/');
-//     return;
-//   }
-//   console.log('working');
-//   res.render('login');
-// });
+
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
