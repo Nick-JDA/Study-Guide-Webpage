@@ -16,7 +16,7 @@
     >
       {{#each module.topics as |topic|}}
         <li>
-          <a class='dropdown-item' href='/api/topics/{{topic.id}}'>
+          <a class='dropdown-item' href='/topics?id={{topic.id}}'>
             {{topic.name}}
           </a>
         </li>

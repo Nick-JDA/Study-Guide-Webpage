@@ -34,4 +34,30 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/topics', async (req, res) => {
+  console.log(req.query.id);
+  try {
+    const topicData = await Topics.findAll({
+      where: { id: req.query.id },
+      include: [{ model: Comments, include: [Users] }],
+    });
+    const topic = topicData.map((topic) => topic.get({ plain: true }));
+
+    const moduleData = await Modules.findAll({
+      include: [{ model: Topics, include: [Comments] }],
+    });
+    const modules = moduleData.map((module) => module.get({ plain: true }));
+    console.log(topic[0].comments[0]);
+
+    res.render('homepage', {
+      modules,
+      topic,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
