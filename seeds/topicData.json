@@ -54,5 +54,165 @@
     "examples": "",
     "resources": "",
     "video_link": ""
+  },
+  {
+    "name": "Media-Queries",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Flexbox",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Responsive-Design",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Box-Styling",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "CSS-Resets",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Pseudo-Classes",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Pseudo-Elements",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Form-Styles",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Wireframing",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "CSS-Selectors",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "CSS-Variables",
+    "module_id": 2,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Console-log",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Variables",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Primitive-Data-Types",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Comparison-Operators",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Conditional-Statements",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Arrays",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Functions",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Methods",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Objects",
+    "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
   }
 ]
