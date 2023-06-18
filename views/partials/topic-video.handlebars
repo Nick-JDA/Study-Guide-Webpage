@@ -22,13 +22,13 @@
 
 {{#if logged_in}}
 <div class='input-group'>
+  <textarea id='comment-text' class='form-control' aria-label='textarea'></textarea>
+  <button id="add-comment" class='btn btn-primary'></button>
+</div>
   <div id="rsDiv">
   <h4>
     Resize Here
   </h4>
-</div>
-  <textarea id='comment-text' class='form-control' aria-label='textarea'></textarea>
-  <button id="add-comment" class = 'btn btn-primary'></button>
 </div>
 {{/if}}
 <!-- Note Card -->
@@ -38,7 +38,7 @@
     <div class='col-md-6 mb-3'>
       <!-- Note Card -->
       <div class='card'>
-        <h5 class='card-header'>{{comment.user.name}}</h5>
+        <h5 id="cardHeaderTxt" class='card-header'>{{comment.user.name}}</h5>
         <div class='card-body'>
           <p class='card-text'>{{comment.comment}}</p>
           <button id="delBtn" class='btn btn-primary delBtn' data-commentId = '{{comment.id}}'>Button</button>
