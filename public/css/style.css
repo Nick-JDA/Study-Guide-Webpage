@@ -252,7 +252,7 @@ h4 {
 
 #add-comment {
   margin-left: 33.5%;
-  margin-top: .5%;
+  margin-top: 1%;
   width: 33%;
   color: var(--addCommentBtn);
   background-color: var(--addCommentBg);
@@ -273,8 +273,9 @@ h4:hover {
   border: 1.5px solid black;
   border-radius: .25rem;
   background-color: var(--cardHeaderBg_color);
-  margin-top: 3%;
+  margin-top: 6%;
   margin-bottom: 5%;
+  position: relative;
 }
 
 .card-header {
@@ -307,6 +308,7 @@ h5 {
   border-color: var(--delBtnBorder_color);
   opacity: 75%;
   font-size: 75%;
+  float: right;
 }
 
 #delBtn:hover {
