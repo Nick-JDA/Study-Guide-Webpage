@@ -2,7 +2,7 @@
   {
     "name": "Command-Line",
     "module_id": 1,
-    "description": "Introduction to the command-line interface",
+    "description": "Introduction to the command-line interface: A command-line interface (CLI) is a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.",
     "examples": "./public/images/commandLineExample",
     "resources": [
       "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands"
@@ -12,7 +12,7 @@
   {
     "name": "Git",
     "module_id": 1,
-    "description": "Introduction to GitHub Repositories",
+    "description": "Introduction to GitHub Repositories: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
     "examples": "",
     "resources": [
       "https://docs.github.com/en/get-started/quickstart/hello-world"
@@ -22,7 +22,7 @@
   {
     "name": "HTML",
     "module_id": 1,
-    "description": "Introduction to HTML",
+    "description": "Introduction to HTML: HTML is the standard markup language for Web pages. With HTML you can create your own Website.",
     "examples": "",
     "resources": [
       "https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet"
@@ -32,7 +32,7 @@
   {
     "name": "Css",
     "module_id": 1,
-    "description": "Introduction to CSS",
+    "description": "Introduction to CSS: Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
     "examples": "",
     "resources": [
       "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started"
