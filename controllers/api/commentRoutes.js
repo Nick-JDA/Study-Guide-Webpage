@@ -24,13 +24,29 @@ router.post('/:id', withAuth, async (req, res) => {
 //delete a comment
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const comment = await Comments.destroy({
+    //find the comment to delete
+    const commentData = await Comments.findAll({
       where: {
         id: req.params.id,
       },
     });
+    const comment = commentData.map((comment) => comment.get({ plain: true }));
+    //if the comment was made by the user that's logged in, remove the comment
+    if (req.session.user_id == comment[0].user_id) {
+      const deleteComment = await Comments.destroy({
+        where: {
+          id: req.params.id,
+        },
+      });
+      res.status(200).json({ message: 'comment deleted' });
+    } else {
+      res
+        .status(400)
+        .json({ message: "Cannot delete a comment that isn't yours!" });
+    }
   } catch (err) {
-    res.status(400).json(err);
+    console.log(err);
+    res.status(500).json(err);
   }
 });
 
