@@ -143,6 +143,8 @@
     "resources": "",
     "video_link": ""
   },
+
+
   {
     "name": "Console-log",
     "module_id": 3,
@@ -210,6 +212,278 @@
   {
     "name": "Objects",
     "module_id": 3,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+
+
+  {
+    "name": "DOM",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Setting-Attributes",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Create-Append",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Timers-Intervals",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Event-Listener",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Event-Bubbling",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Data-Attributes",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Local-Storage",
+    "module_id": 4,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+
+
+  {
+    "name": "jQuery",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Click-Events",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Form-Elements",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Event-Delegation",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Bootstrap",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "jQuery-UI",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "DayJS",
+    "module_id": 5,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+
+
+  {
+    "name": "Fetch",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Parse",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Network-Activity",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Fetch-Status",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Parameters",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Fetch-Options",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Document-Location",
+    "module_id": 6,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+
+
+  {
+    "name": "Node",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Arrow-Function",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Let-Const",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Functional-Loops",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Template-Literals",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Read-Write-File",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Modularization",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "NPM",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "For-Of-Loop",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Rest-and-Spread",
+    "module_id": 7,
+    "description": "",
+    "examples": "",
+    "resources": "",
+    "video_link": ""
+  },
+  {
+    "name": "Object-Destructuring",
+    "module_id": 7,
     "description": "",
     "examples": "",
     "resources": "",
