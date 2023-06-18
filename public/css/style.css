@@ -1,71 +1,35 @@
 :root {
   --primaryfont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+
   /* Color Pallette */
-  --primary: rgb(173, -0, 28);
-  --secondary: rgb(107, 20, 38);
-  --tertiary: rgb(250, 220, 212);
-  --quaternary: rgb(196, 206, 195);
-  --quinary: rgb(131, 160, 138);
-  --senary: rgb(66, 120, 87);
-  --septenary: rgb(32, 118, 91);
-  --octonary: rgb(36, 63, 46);
-  --nonary: rgb(43, 49, 35);
-
-/* Working Color Pallette */
---main: rgba(40, 35, 46, 0.97);
---color2: rgb(0, 166, 129);
---primary: rgb(173, -0, 28);
---septenary: rgb(32, 118, 91);
---secondary: rgb(107, 20, 38);
---color5: rgb(38, 32, 46);
---color20: rgb(21, 17, 25);
---black: rgb(9, 9, 9);
---quaternary: rgb(196, 206, 195);
-
-/* Needs to be cleaned */
-  --color1: rgb(0, 147, 166);
-  --color2: rgb(0, 166, 129);
-  --color3: rgb(9, 67, 86);
-  --color4: rgb(27, 50, 70);
-  --color5: rgb(38, 32, 46);
-  --color6: rgb(1, 41, 44);
-  --color7: rgb(168, 0, 13);
-  --color8: rgb(103, 2, 11);
-  --color9: rgb(40, 35, 46);
-  --color10: rgb(98, 98, 98);
-  --color11: rgb(222, 173, 139);
-  --color12: rgb(199	183	158);
-  --color13: rgb(192	196	178	);
-
-  --color14: rgb(202	220	207	); 
-
-  --color15: rgb(218	248	250	);
-  --color16: rgb(205	204	201	);
-  --color17: rgb(246	229	221	);
-  --color18: rgb(173	183	192	);
-  --color19: rgb(137	155	154	);
+  --mainbody: rgba(40, 35, 46, 0.97);
+  --primary: rgb(0, 166, 129);
+  --secondary: rgb(32, 118, 91);
+  --tertiary: rgb(173, -0, 28);
+  --quaternary: rgb(107, 20, 38);
+  --quinary: rgb(38, 32, 46);
+  --senary: rgb(21, 17, 25);
+  --septenary: rgb(196, 206, 195);
   
+  --black: rgb(9, 9, 9);
+  --white: rgb(255, 255, 255);
 
-/* Element Breakdown */
+  /* Element Breakdown */
   --body_color: rgba(40, 35, 46, 0.97);
 
-  --topnavPrimary_color: rgb(36, 63, 46);
-  
   --topnavBtn_color: rgb(32, 118, 91);
   --loginBtnHover_color: rgb(0, 166, 129);
-
   --topnavFont_color: rgb(9, 9, 9);
   --topnavTxtBorder_color: rgb(9, 9, 9);
-
   --topnavTxtBg_color: rgb(0, 166, 129);
-
   --topnavBtnBorder: rgb(9, 9, 9);
   --sidebarToggle_color: rgb(32, 118, 91);
+
   --sidebarHover_coler: rgb(0, 166, 129);
   --sidebarBg_color: rgb(38, 32, 46);
   --sidebarTitle_color: rgb(196, 206, 195);
   --sidebarLi_color: rgb(196, 206, 195);
+
   --dropdownBg_color: rgb(21, 17, 25);
   --dropdownItems_color: rgb(196, 206, 195);
   --dropdownHoverText_color: rgb(196, 206, 195);
@@ -83,22 +47,21 @@
   --lessonTitle_color: rgb(0, 166, 129);
   --lessonTitleBdr_color: rgb(9, 9, 9);
 
-  --notesTitle_color: rgba(255, 255, 255, 0.626);
-  --notesinputBg_color: rgba(255, 255, 255, 0.95);
+  --notesTitle_color: rgba(255, 255, 255);
+  --notesinputBg_color: rgba(255, 255, 255);
 
   --cardHeaderBg_color: rgb(0, 166, 129);
-  --cardheaderTxt_color: rgb(0, 0, 0);
-  --cardbodyBg_color: rgb(255, 255, 255, 0.95);
+  --cardheaderTxt_color: rgb(9, 9, 9);
+  --cardbodyBg_color: rgb(255, 255, 255);
   --cardbodyTxt_color: rgb(9, 9, 9);
 
   --delBtnBg_color: rgb(9, 9, 9);
   --delBtnTxt_color: rgb(255, 255, 255, 0.8);
   --delBtnBorder_color: rgb(9, 9, 9);
 
-  --delBtnBgHvr_color: rgb(168, 0, 13);
+  --delBtnBgHvr_color: rgb(173, -0, 28);
   --delBtnTxtHvr_color: rgb(9, 9, 9);
   --delBtnBorderHvr_color: rgb(9, 9, 9);
-
 }
 
 body {
@@ -121,7 +84,7 @@ body {
   color: var(--sidebarTitle_color);
   width: 100%;
   margin-bottom: 1%;
-  }
+}
 
 .navbar-brand {
   background-color: var(--topnavTxtBg_color);
@@ -130,20 +93,20 @@ body {
   padding: 1%;
   padding-right: 3%;
   padding-left: 3%;
- color: var(--topnavFont_color);
- opacity: 88%;
- font-size: 250%;
- margin-left: 1%;
- margin-right: 5%;
- margin-top: 6%;
- margin-bottom: 6%;
- display: inline-block;
- white-space: normal;
+  color: var(--topnavFont_color);
+  opacity: 88%;
+  font-size: 250%;
+  margin-left: 1%;
+  margin-right: 5%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  display: inline-block;
+  white-space: normal;
 }
 
 .navbar-brand:hover {
- opacity: 93%;
- transition: 350ms;
+  opacity: 93%;
+  transition: 350ms;
 }
 
 .offcanvas {
@@ -216,7 +179,22 @@ body {
   opacity: 80%;
 }
 
+#signBtn {
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: var(--topnavBtnBorder);
+  background-color: var(--topnavBtn_color);
+  color: var(--topnavFont_color);
+  opacity: 80%;
+}
+
 #logBtn:hover {
+  transition: 300ms;
+  background-color: var(--loginBtnHover_color);
+  opacity: 95%;
+}
+
+#signBtn:hover {
   transition: 300ms;
   background-color: var(--loginBtnHover_color);
   opacity: 95%;
@@ -227,15 +205,17 @@ h2 {
   margin-bottom: 4%;
   margin-top: 10%;
   color: var(--lessonTitle_color);
-  font-size: 275%;
-  font-weight: 550;
-  -webkit-text-stroke: 1px var(--lessonTitleBdr_color)
+  font-size: 300%;
+  font-weight: 700;
+  opacity: 80%;
+  -webkit-text-stroke: 1px var(--lessonTitleBdr_color);
 }
 
 h6 {
   margin-top: 3%;
   margin-left: 4%;
   color: var(--notesTitle_color);
+  opacity: 70%;
 }
 
 .videoPlayer {
@@ -252,6 +232,7 @@ h6 {
 
 .form-control:focus {
   background-color: var(--notesinputBg_color);
+  opacity: 95%;
 }
 
 #rsDiv {
@@ -277,6 +258,7 @@ h4 {
   background-color: var(--addCommentBg);
   border-color: var(--addcommentBorder);
 }
+
 #add-comment:hover {
   color: var(--addCommentBtn_hover);
   background-color: var(--addCommentBg_hover);
@@ -312,6 +294,7 @@ h5 {
 .card-body {
   background-color: var(--cardbodyBg_color);
   border-radius: .1rem;
+  opacity: 95%;
 }
 
 .card-text {
