@@ -19,5 +19,5 @@ const commentFunction = async (event) => {
 };
 
 document
-  .querySelector('.add-comment')
+  .querySelector('#add-comment')
   .addEventListener('click', commentFunction);
