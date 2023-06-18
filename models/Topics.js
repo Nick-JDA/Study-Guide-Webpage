@@ -23,7 +23,7 @@ Topics.init(
       },
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     examples: {
       type: DataTypes.STRING,
