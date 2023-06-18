@@ -12,18 +12,39 @@
   --octonary: rgb(36, 63, 46);
   --nonary: rgb(43, 49, 35);
 
+  --color1: rgb(0, 147, 166);
+  --color2: rgb(0, 166, 129);
+  --color3: rgb(9, 67, 86);
+  --color4: rgb(27, 50, 70);
+  --color5: rgb(38, 32, 46);
+  --color6: rgb(1, 41, 44);
+  --color7: rgb(168, 0, 13);
+  --color8: rgb(103, 2, 11);
+
 /* Element Breakdown */
   --body_color: rgb(196, 206, 195);
 
   --topnavPrimary_color: rgb(36, 63, 46);
-  --topnavBtn_color: rgb(179, 240, 73);
+  
+  --topnavBtn_color: rgb(32, 118, 91);
+  --loginBtnHover_color: rgb(0, 166, 129);
+
   --topnavFont_color: rgb(9, 9, 9);
+  --topnavTxtBorder_color: rgb(9, 9, 9);
+
+  --topnavTxtBg_color: rgb(0, 166, 129);
+
   --topnavBtnBorder: rgb(9, 9, 9);
 
-  --sidebarBg_color: rgb(56, 81, 35);
-  --sidebarSecondary_color: rgb(56, 81, 35);
-  --sidebarTitle_color: rgb(179, 240, 73);
-  --sidebarLi_color: rgb(32, 118, 91);
+  --sidebarToggle_color: rgb(32, 118, 91);
+  --sidebarHover_coler: rgb(0, 166, 129);
+
+  --sidebarBg_color: rgb(38, 32, 46);
+
+  --sidebarSecondary_color: rgb(43, 49, 35);
+
+  --sidebarTitle_color: rgb(38, 32, 46);
+  --sidebarLi_color: rgb(131, 160, 138);
   --dropdownBg_color: rgb(179, 240, 73);
   --dropdownItems_color: rgb(56, 81, 35);
   --dropdownHoverText_color: rgb(250, 220, 212);
@@ -42,6 +63,9 @@
   --delBtnBg_color: rgb(56, 81, 35);
   --delBtnTxt_color: rgb(32, 118, 91);
   --delBtnBorder_color: rgb(250, 220, 212);
+  --delBtnBgHvr_color: rgb(56, 81, 35);
+  --delBtnTxtHvr_color: rgb(32, 118, 91);
+  --delBtnBorderHvr_color: rgb(250, 220, 212);
 }
 
 body {
@@ -51,7 +75,13 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  background-image: url("../images/galaxy_banner.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: sticky;
+  border: 2px solid black;
+
   top: 0;
   z-index: 100;
   background-color: var(--topnavPrimary_color);
@@ -61,20 +91,56 @@ body {
   }
 
 .navbar-brand {
+  background-color: var(--topnavTxtBg_color);
+  border-radius: 1px;
+  border: 2px solid var(--topnavTxtBorder_color);
+  padding: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
  color: var(--topnavFont_color);
- font-size: 275%;
+ opacity: 88%;
+ font-size: 250%;
+ margin-left: 1%;
  margin-right: 5%;
  margin-top: 6%;
- margin-left: 2%;
- margin-bottom: 3%;
+ margin-bottom: 6%;
+ display: inline-block;
+ white-space: normal;
+}
+
+.navbar-brand:hover {
+ opacity: 93%;
+ transition: 350ms;
 }
 
 .offcanvas {
   background-color: var(--sidebarBg_color);
 }
 
+.navbar-toggler {
+  background-color: var(--sidebarToggle_color);
+  opacity: 90%;
+}
+
+.navbar-toggler:hover {
+  background-color: var(--sidebarHover_coler);
+  transition: 350ms;
+  opacity: 100%;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: var(--sidebarLi_color) !important;
+  opacity: 50%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--sidebarLi_color) !important;
+  transition: 300ms;
+  opacity: 100%;
+}
+
+#activeLi {
+  opacity: 100%;
 }
 
 .dropdown-menu {
@@ -87,40 +153,39 @@ body {
 
 .dropdown-item:hover {
   color: var(--dropdownHoverText_color);
-  background-color: var(--dropdownHoverOverlay_color)
+  background-color: var(--dropdownHoverOverlay_color);
+  transition: 300ms;
 }
 
-#homeBtn, #logBtn {
-  border-width: 5px;
-  border-color: var(--topnavBtnBorder);
-  background-color: var(--topnavBtn_color);
-  color: var(--topnavFont_color);
-}
 
-#homeBtn {
-  position: absolute;
-  top: 3px;
-  left: 70px;
-  transform: scale(0.5);
-  margin-bottom: 50px;
-  opacity: 50%;
+#logDiv {
+  display: flex;
+  justify-content: center;
+  margin-right: 9%;
+  margin-left: 2%;
 }
 
 #logBtn {
-  margin-left: 3%;
-  margin-top: 3%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: var(--topnavBtnBorder);
+  background-color: var(--topnavBtn_color);
+  color: var(--topnavFont_color);
+  opacity: 80%;
+}
+
+#logBtn:hover {
+  transition: 300ms;
+  background-color: var(--loginBtnHover_color);
+  opacity: 95%;
 }
 
 h2 {
   margin-left: 10%;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   margin-top: 10%;
   color: var(--lessonTitle_color);
   font-size: 200%;
-  padding-top: 150px;
 }
 
 h6 {
@@ -135,7 +200,7 @@ h6 {
 
 .form-control {
   background-color: var(--notesinputBg_color);
-  margin-bottom: 3%;
+  margin-bottom: .5%;
   margin-left: 2%;
   margin-right: 2%;
   border: 1px solid black;
@@ -143,6 +208,23 @@ h6 {
 
 .form-control:focus {
   background-color: var(--notesinputBg_color);
+}
+
+#rsDiv {
+  text-align: right;
+  margin-bottom: 1%;
+}
+
+h4 {
+  font-size: 66%;
+  display: inline;
+  margin-right: 3%;
+  opacity: 18%;
+}
+
+h4:hover {
+  opacity: 66%;
+  transition: 350ms;
 }
 
 .card {
@@ -172,5 +254,12 @@ h5 {
   color: var(--delBtnTxt_color);
   background-color: var(--delBtnBg_color);
   border-color: var(--delBtnBorder_color);
+  opacity: 75%;
 }
-
+#delBtn:hover {
+  color: var(--delBtnTxtHvr_color);
+  background-color: var(--delBtnBgHvr_color);
+  border-color: var(--delBtnBorderHvr_color);
+  opacity: 99%;
+  transition: 325ms;
+}
