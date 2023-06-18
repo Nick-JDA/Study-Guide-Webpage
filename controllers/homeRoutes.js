@@ -2,17 +2,6 @@ const router = require('express').Router();
 const { Users, Topics, Modules, Comments } = require('../models');
 const withAuth = require('../utils/auth');
 
-//login route
-router.get('/login', (req, res) => {
-  console.log('beforeif');
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-  console.log('working');
-  res.render('login');
-});
-
 router.get('/', async (req, res) => {
   try {
     //get modules
@@ -58,6 +47,15 @@ router.get('/topics', async (req, res) => {
     console.log(err);
     res.status(500).json(err);
   }
+});
+
+//login route
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('login');
 });
 
 module.exports = router;

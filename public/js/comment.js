@@ -1,20 +1,23 @@
-const commentText = document.querySelector('#comment-text')
-const topicPage = parseInt(document.location.href.split("=")[1]);
-
-
-const commentFunction = async () => {
-    const commentWhatever = commentText.value;
-  const response = await fetch('api/comments/' + topicPage, {
-    method: 'POST',
-    body: JSON.stringify({ commentWhatever }),
-    headers: { 'Content-Type': 'application/json' },
-  });
-
-  if (response.ok) {
-    alert("comment added");
-  } else {
-    alert(response.statusText);
+const commentFunction = async (event) => {
+  event.preventDefault();
+  const commentText = document.querySelector('#comment-text');
+  const comment = commentText.value.trim();
+  const topicPage = parseInt(document.location.href.split('=')[1]);
+  const commentPath = 'api/comments/' + topicPage;
+  if (comment) {
+    const response = await fetch(commentPath, {
+      method: 'POST',
+      body: JSON.stringify({ comment }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (response.ok) {
+      document.location.reload();
+    } else {
+      alert('Failed to add comment');
+    }
   }
 };
-console.log(parseInt(document.location.href.split("=")[1]));
-document.querySelector('.add-comment').addEventListener('click', commentFunction);
+
+document
+  .querySelector('.add-comment')
+  .addEventListener('click', commentFunction);
