@@ -17,21 +17,18 @@
   </div>
 </div>
 
-<div class="input-group">
-  <textarea class="form-control" aria-label="textarea"></textarea>
-</div>
 
-<div id="rsDiv">
+{{#if logged_in}}
+<div class='input-group'>
+  <div id="rsDiv">
   <h4>
     Resize Here
   </h4>
 </div>
-
-<div class='input-group'>
   <textarea id='comment-text' class='form-control' aria-label='textarea'></textarea>
-  <button class="add-comment"></button>
+  <button id="add-comment" class = 'btn btn-primary'></button>
 </div>
-
+{{/if}}
 <!-- Note Card -->
 <div class='container'>
   <div class='row justify-content-center'>
@@ -49,3 +46,4 @@
     {{/each}}
   </div>
 </div>
+
