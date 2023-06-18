@@ -150,6 +150,13 @@ body {
   opacity: 100%;
 }
 
+.d-flex {
+  margin-top: 6%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
 #activeLi {
   opacity: 100%;
 }
