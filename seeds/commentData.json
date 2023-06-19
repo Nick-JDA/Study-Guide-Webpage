@@ -1,12 +1,7 @@
 [
     {
-        "comment": "nice job",
-        "topic_id": 2,
-        "user_id": 1
-    },
-    {
-        "comment": "nice job part two",
-        "topic_id": 2,
+        "comment": "How do I do HTML?",
+        "topic_id": 4,
         "user_id": 1
     }
 ]
