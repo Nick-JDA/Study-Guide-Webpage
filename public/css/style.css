@@ -68,6 +68,7 @@ body {
   line-height: 1.5;
   font-family: var(--primaryfont);
   background-color: var(--body_color);
+  border-left: 2px solid black;
 }
 
 .navbar {
@@ -77,10 +78,8 @@ body {
   background-attachment: fixed;
   position: sticky;
   border: 2px solid black;
-
   top: 0;
   z-index: 100;
-  background-color: var(--topnavPrimary_color);
   color: var(--sidebarTitle_color);
   width: 100%;
   margin-bottom: 1%;
@@ -145,6 +144,7 @@ body {
 
 #activeLi {
   opacity: 100%;
+  margin-bottom: 7%;
 }
 
 .dropdown-menu {
@@ -212,8 +212,9 @@ h2 {
 }
 
 h6 {
-  margin-top: 3%;
+  margin-top: 2%;
   margin-left: 4%;
+  margin-right: 4%;
   color: var(--notesTitle_color);
   opacity: 70%;
 }
@@ -324,4 +325,8 @@ h5 {
   margin-left: 4%;
   color: var(--notesTitle_color);
   opacity: 70%;
+}
+
+#loginDiv {
+
 }

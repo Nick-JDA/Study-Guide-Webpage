@@ -16,16 +16,20 @@
     </div>
   </div>
 </div>
+
 <div>
-  <p>{{topic.description}}</p>
+  <h6>{{topic.0.description}}</h6>
 </div>
 
 {{#if logged_in}}
+<h6>
+  Add comments below!
+</h6>
 <div class='input-group'>
   <textarea id='comment-text' class='form-control' aria-label='textarea'></textarea>
   <button id="add-comment" class='btn btn-primary'></button>
 </div>
-  <div id="rsDiv">
+<div id="rsDiv">
   <h4>
     Resize Here
   </h4>
@@ -41,7 +45,8 @@
         <h5 id="cardHeaderTxt" class='card-header'>{{comment.user.name}}</h5>
         <div class='card-body'>
           <p class='card-text'>{{comment.comment}}</p>
-          <button id="delBtn" class='btn btn-primary delBtn' data-commentId = '{{comment.id}}'><i class="bi bi-trash"></i></button>
+          <button id="delBtn" class='btn btn-primary delBtn' data-commentId='{{comment.id}}'><i
+              class="bi bi-trash"></i></button>
         </div>
       </div>
     </div>
@@ -49,4 +54,4 @@
   </div>
 </div>
 
-<script src = '/js/comment.js'></script>
+<script src='/js/comment.js'></script>
