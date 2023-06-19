@@ -318,3 +318,10 @@ h5 {
   opacity: 99%;
   transition: 325ms;
 }
+
+#loginLabel {
+  margin-top: 3%;
+  margin-left: 4%;
+  color: var(--notesTitle_color);
+  opacity: 70%;
+}
