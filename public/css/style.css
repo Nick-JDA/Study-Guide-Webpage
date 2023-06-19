@@ -302,6 +302,11 @@ h5 {
   color: var(--cardbodyTxt_color);
 }
 
+#topicDescription {
+  color: var(--rsizeTxt_color);
+  margin-left: 2%;
+}
+
 #delBtn {
   color: var(--delBtnTxt_color);
   background-color: var(--delBtnBg_color);
